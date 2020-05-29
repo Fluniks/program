@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmogApp.Smog.Infrastructure
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmogApp.Smog.Presentation", "Modules\Smog\SmogApp.Smog.Presentation\SmogApp.Smog.Presentation.csproj", "{4D62FF2D-23FE-46D2-B375-0C48181EB8AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmogApp.Api", "SmogApp.Api\SmogApp.Api.csproj", "{9946AB5D-DB61-4F6E-9F4B-7E018BF677E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +88,10 @@ Global
 		{4D62FF2D-23FE-46D2-B375-0C48181EB8AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D62FF2D-23FE-46D2-B375-0C48181EB8AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D62FF2D-23FE-46D2-B375-0C48181EB8AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9946AB5D-DB61-4F6E-9F4B-7E018BF677E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9946AB5D-DB61-4F6E-9F4B-7E018BF677E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9946AB5D-DB61-4F6E-9F4B-7E018BF677E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9946AB5D-DB61-4F6E-9F4B-7E018BF677E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A689519A-D760-4373-A240-1FC2BD90324F} = {1C943F38-32CB-4CCC-A6A8-F9801DBB4314}
