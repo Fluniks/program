@@ -13,6 +13,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Core\SmogApp.Core.Application\SmogApp.Core.Application.csproj" />
+      <ProjectReference Include="..\Core\SmogApp.Core.Infrastructure\SmogApp.Core.Infrastructure.csproj" />
       <ProjectReference Include="..\Modules\Users\SmogApp.Users.Application\SmogApp.Users.Application.csproj" />
     </ItemGroup>
 

@@ -12,6 +12,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using SmogApp.Core.Application.Command;
+using SmogApp.Core.Application.Event;
+using SmogApp.Core.Infrastructure.Command;
+using SmogApp.Core.Infrastructure.Event;
+using SmogApp.Core.Infrastructure.Query;
+using SmogApp.Core.Presentation.Query;
 using SmogApp.Users.Application;
 
 namespace SmogApp.Api
@@ -30,7 +36,10 @@ namespace SmogApp.Api
         {
             services.AddControllers();
 
-            services.AddMediatR(GetAssemblyMarkers());
+            services.AddMediatR(GetAssemblyMarkers())
+                .AddTransient<ICommandBus,CommandBus>()
+                .AddTransient<IEventBus,EventBus>()
+                .AddTransient<IQueryBus,QueryBus>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
